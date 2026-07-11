@@ -15,7 +15,7 @@ class Main {
         } else {
             System.out.println("Given Integer " + givenInput + " is Nutral");
         }
-        
+    
         userInput.close();
     }
 }
