@@ -20,7 +20,7 @@ class Main {
 
         // Inbuild Math Function
         System.out.println(Math.max(firstNumber, secondNumber) + " is Greatest");
-        
+
         userInput.close();
     }
 }
