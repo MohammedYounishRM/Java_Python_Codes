@@ -10,4 +10,4 @@ print("Decimal Number of",octal, "is",decimal)
 #     decimalValue += digit * pow(8, n)
 #     octal //= 10
 #     n+=1
-# print(decimalValue)import java.util.Scanner;
+# print(decimalValue)
