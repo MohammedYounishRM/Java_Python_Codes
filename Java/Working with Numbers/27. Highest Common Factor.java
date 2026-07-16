@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String [] args) {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.println("Enter the First number:");
+        int number1 = userInput.nextInt();
+        
+        System.out.println("Enter the Second number:");
+        int number2 = userInput.nextInt();
+
+        while( number1 != number2 ) {
+            if( number1 > number2 ) {
+                number1 -=  number2;
+            } else {
+                number2 -= number1;
+            }
+        }
+        System.out.println("The HCF is " + number1);
+        userInput.close();
+    }
+}
