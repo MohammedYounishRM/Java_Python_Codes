@@ -7,18 +7,18 @@ class Main {
         System.out.println("Enter the Decimal value:");
         int decimal = userInput.nextInt();
         
-        // String binary = "";
-        // if(decimal == 0) {
-        //     binary = "0";
-        // }
-        // while(decimal > 0) {
-        //     int rem = decimal % 2;
-        //     binary = rem + binary;
-        //     decimal /= 2;
-        // }
+        String binary = "";
+        if(decimal == 0) {
+            binary = "0";
+        }
+        while(decimal > 0) {
+            int rem = decimal % 2;
+            binary = rem + binary;
+            decimal /= 2;
+        }
 
         //Built-in Method 
-        String binary = Integer.toBinaryString(decimal);
+        // String binary = Integer.toBinaryString(decimal);
         System.out.println("The Binary value of " + decimal + " is " + binary );
 
         userInput.close();
