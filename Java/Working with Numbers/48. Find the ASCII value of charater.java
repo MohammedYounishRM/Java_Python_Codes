@@ -3,6 +3,7 @@ import java.util.Scanner;
 class Main {
     public static void main(String [] args) {
         Scanner userInput = new Scanner(System.in);
+        
         System.out.println("Enter a Word :");
         String word = userInput.next();
         

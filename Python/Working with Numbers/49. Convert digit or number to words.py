@@ -6,6 +6,7 @@ thousands = ["", "thousand", "million", "billion", "trillion"]
 
 if (number == 0):
     print("Zero")
+
 else:
     words = []
     thousandIndex = 0
@@ -24,17 +25,21 @@ else:
             
             if (0 < rem < 20):
                 combineWords.append(ones[rem])
+
             elif (rem >= 20):
                 combineWords.append(tens[rem // 10])
+                
                 if ((rem % 10) > 0):
                     combineWords.append(ones[rem % 10])
 
             if thousands[thousandIndex]:
                 combineWords.append(thousands[thousandIndex])
+
             words.insert(0, " ".join(combineWords))
 
         number //= 1000
         thousandIndex += 1
+
 print(" ".join(words))
 
 # Another Method

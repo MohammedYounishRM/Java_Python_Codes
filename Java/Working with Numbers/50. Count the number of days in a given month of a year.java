@@ -10,7 +10,7 @@ class Main{
         int year = userInput.nextInt();
         
         switch (month) {
-            case 1:
+            case 1:             //Fall through next statements
             case 3:
             case 5:
             case 7:
