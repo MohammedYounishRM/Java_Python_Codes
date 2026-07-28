@@ -12,15 +12,19 @@ class Main {
             System.out.print("Element " + (i + 1) + ": ");
             array[i] = userInput.nextInt();
         }
+
         int distinctCount = 0;
+        
         for (int j = 0; j < size; j++) {
             boolean distinct = true;
+        
             for (int k = 0; k < j; k++) {
                 if (array[j] == array[k]) {
                     distinct = false;
                     break;
                 }
             }
+        
             if(distinct) {
                 distinctCount++;
             }
