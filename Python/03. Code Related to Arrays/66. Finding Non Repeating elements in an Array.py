@@ -16,4 +16,5 @@ for i in range(lengthOfArray):
 
     if unique:
         nonrepeat.append(array[i])
+        
 print("The non repeated elements are", nonrepeat)
